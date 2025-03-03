@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Quality Leads Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-color: #1a1a1a;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100px;
+        }
+
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .big-w {
+            color: #1da1f2;
+            font-size: 4rem;
+            font-weight: bold;
+            line-height: 0.8;
+        }
+
+        .hero-title {
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-text {
+            color: #888;
+            margin: 1.5rem 0;
+        }
+
+        .btn-contact {
+            background-color: #1da1f2;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-contact:hover {
+            background-color: #1991db;
+            color: #fff;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+        }
+        .service-card {
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+        .service-card:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+        .icon img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+        .active-card {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section {
+            background-color: #111;
+            color: white;
+            padding: 60px 0;
+        }
+        .section img {
+            max-width: 50%;
+            height: auto;
+        }
+        .section .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .section .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .sectionsec {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .icon img {
+            width: 80px;
+            height: 80px;
+        }
+        .active-card {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .testimonial-section {
+            padding: 60px 0;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+        .testimonial-card {
+            background: #222;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+
+        }
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .stars {
+            color: gold;
+        }
+        .expert-card {
+            background: white;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .expert-card:hover {
+            transform: scale(1.05);
+        }
+        .btn-custom {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        .wave {
+            position: relative;
+            background: black;
+            color: white;
+            padding: 50px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .wave::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url('https://cdn.pixabay.com/photo/2017/06/20/03/10/wave-2426498_960_720.png') repeat-x;
+            background-size: cover;
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">SGC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="mb-4">
+                        <span class="big-w">W</span>
+                        <span class="hero-title">e Collect High<br>Quality Leads</span>
+                    </h1>
+                    <p class="hero-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquot ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit.
+                    </p>
+                    <button class="btn btn-contact">Contact Us</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGdveGZub2lpYzFpdTExOTlycW03NHA4aGttYjh6MnRhNDVma3duNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2jMkaorRzxIx52vBYH/giphy.gif" 
+                         alt="Animated Business Analytics Illustration" 
+                         class="hero-image"
+                         loading="lazy"
+                         style="background: transparent;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Shape -->
+        <div class="wave-shape"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container text-center my-5">
+        <h2 class="mb-4">What We Will Do For <br> Your Business</h2>
+        <div class="row">
+            <!-- Link Building Card -->
+            <div class="col-md-4">
+                <div class="card service-card p-3">
+                    <div class="icon">
+                        <img src="https://th.bing.com/th/id/OIP.oQQbXgLGVF1skUzB8yXZgQHaEK?rs=1&pid=ImgDetMain" alt="Link Building">
+                    </div>
+                    <h5>Link Building</h5>
+                    <p>Helps to diversify sources and increase the authority of pages with high rankings.</p>
+                </div>
+            </div>
+            <!-- Content Marketing Card (Active with shadow) -->
+            <div class="col-md-4">
+                <div class="card service-card p-3 active-card">
+                    <div class="icon">
+                        <img src="https://th.bing.com/th/id/OIP.zZVM4tEk1j1zT0pzogF4pwHaFj?rs=1&pid=ImgDetMain" alt="Content Marketing">
+                    </div>
+                    <h5>Content Marketing</h5>
+                    <p>Crafting engaging and SEO-friendly content to drive organic growth.</p>
+                </div>
+            </div>
+            <!-- On-Page SEO Card -->
+            <div class="col-md-4">
+                <div class="card service-card p-3">
+                    <div class="icon">
+                        <img src="https://th.bing.com/th/id/OIP.xvrQlUPZEmYt0LcpuE038QHaGK?rs=1&pid=ImgDetMain" alt="On-Page SEO">
+                    </div>
+                    <h5>On-Page SEO</h5>
+                    <p>Optimizing web pages to improve search engine visibility and user experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row section align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif" alt="Animated Phone Click">
+            </div>
+            <div class="col-md-6">
+                <h2>Steps To Build A <br> Successful Digital Product</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn btn-primary">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<div class="container sectionsec">
+    <h2 class="mb-4">Generating New Customers Via <br> Online Mode</h2>
+    <div class="row g-4">
+        <!-- Box 1 -->
+        <div class="col-md-6">
+            <div class="card d-flex flex-row align-items-center p-3">
+                <div class="icon me-3">
+                    <img src="https://media1.giphy.com/media/9SN6sjZZ3XzB6/100.webp?cid=790b76118n5ozgrbvjbg260s3pdb3vbre6jc5xims71lv0kb&ep=v1_gifs_search&rid=100.webp&ct=g" alt="Social Media">
+                </div>
+                <div class="text-start">
+                    <h5>Social Media Marketing</h5>
+                    <p>Reach a vast audience by leveraging engaging content and ads on platforms like Facebook, Instagram, and Twitter.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="col-md-6">
+            <div class="card d-flex flex-row align-items-center p-3">
+                <div class="icon me-3">
+                    <img src="https://media1.giphy.com/media/WB9QhuHfkglVyiRVha/200.webp?cid=790b7611nu48wcstuf1ssxad2imr7bjju1o3fgc2jpjq5tu7&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Influencer Marketing">
+                </div>
+                <div class="text-start">
+                    <h5>Influencer Marketing</h5>
+                    <p>Partner with influencers to promote your products and services across various social media channels.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="col-md-6">
+            <div class="card d-flex flex-row align-items-center p-3">
+                <div class="icon me-3">
+                    <img src="https://media3.giphy.com/media/BuJ8KOvzuPXcxqm6ZY/100.webp?cid=790b7611zxgpffnu0t530d0qrvvymp2ew6xrpyavpx4dizio&ep=v1_gifs_search&rid=100.webp&ct=g" alt="Banner Marketing">
+                </div>
+                <div class="text-start">
+                    <h5>Banner Marketing</h5>
+                    <p>Use clickable banners on websites and blogs to attract potential customers and generate leads.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Box 4 -->
+        <div class="col-md-6">
+            <div class="card d-flex flex-row align-items-center p-3">
+                <div class="icon me-3">
+                    <img src="https://media1.giphy.com/media/9SN6sjZZ3XzB6/100.webp?cid=790b76118n5ozgrbvjbg260s3pdb3vbre6jc5xims71lv0kb&ep=v1_gifs_search&rid=100.webp&ct=g" alt="Partner Programs">
+                </div>
+                <div class="text-start">
+                    <h5>Partner Programs</h5>
+                    <p>Collaborate with partners to create co-branded marketing efforts that expand your customer reach.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container testimonial-section">
+    <h2 class="mb-4">What Clients Say <br> About Us</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <img src="https://th.bing.com/th/id/OIP.88U_XTsYICEJKNBtXBG9gAHaLH?w=204&h=306&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Client">
+                            <h5>Angela Thompson</h5>
+                            <p>"Fantastic service! Highly recommended."</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <img src="https://th.bing.com/th/id/OIP.88U_XTsYICEJKNBtXBG9gAHaLH?w=204&h=306&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Client">
+                            <h5>John Doe</h5>
+                            <p>"They exceeded my expectations. Amazing work!"</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="col-md-3">
+                        <div class="testimonial-card">
+                            <img src="https://th.bing.com/th/id/OIP.88U_XTsYICEJKNBtXBG9gAHaLH?w=204&h=306&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Client">
+                            <h5>Emily Davis</h5>
+                            <p>"Professional and reliable. Great results!"</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container text-center my-5">
+    <h2 class="mb-4">Tips and Tricks From <br> Our Experts</h2>
+    <div class="row">
+        <!-- Expert 1 -->
+        <div class="col-md-3">
+            <div class="expert-card">
+                <h5>Web Development</h5>
+                <p>Learn the latest trends in web technologies and frameworks.</p>
+                <button class="btn btn-custom">Read More</button>
+            </div>
+        </div>
+        <!-- Expert 2 -->
+        <div class="col-md-3">
+            <div class="expert-card">
+                <h5>Freelancing</h5>
+                <p>Master the art of freelancing and growing your business.</p>
+                <button class="btn btn-custom">Read More</button>
+            </div>
+        </div>
+        <!-- Expert 3 -->
+        <div class="col-md-3">
+            <div class="expert-card">
+                <h5>Graphic Design</h5>
+                <p>Explore modern design techniques and software tips.</p>
+                <button class="btn btn-custom">Read More</button>
+            </div>
+        </div>
+        <!-- Expert 4 -->
+        <div class="col-md-3">
+            <div class="expert-card">
+                <h5>WordPress Development</h5>
+                <p>Enhance your WordPress skills for better site performance.</p>
+                <button class="btn btn-custom">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Section -->
+<div class="wave">
+    <h2>Contact Us</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control mb-3" placeholder="Full Name">
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control mb-3" placeholder="Email Address">
+            </div>
+            <div class="col-12">
+                <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                <button class="btn btn-custom">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</body>
+</html>
